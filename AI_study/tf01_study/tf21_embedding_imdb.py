@@ -10,7 +10,7 @@ import time
     num_words=10000 # 임베딩 레이어의 input_dim
 )
 print(x_train)
-print(x_train.shape, y_train.shape)
+print(x_train.shape, y_train.shape) # (25000,) (25000,)
 print(np.unique(y_train, return_counts=True))   # 데이터 확인 : 답변이 몇 개인지 확인 가능
 print(len(np.unique(y_train)))  # 2
 
