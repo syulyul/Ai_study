@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.linear_model import Perceptron
-from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), Regresser(회귀)
+from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), R = Regresser(회귀)
 from sklearn.metrics import accuracy_score
 
 # 1. 데이터
