@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.linear_model import Perceptron
-from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), Regresser(회귀)
+from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), R = Regresser(회귀)
 from sklearn.metrics import accuracy_score
 from keras.models import Sequential
 from keras.layers import Dense
@@ -32,3 +32,10 @@ y_predict = model.predict(x_data)
 print(x_data, '의 예측 결과 :', y_predict)
 print('모델의 loss : ', loss)
 print('acc : ', acc)
+
+# [[0, 0], [0, 1], [1, 0], [1, 1]] 의 예측 결과 : [[0.00640666]
+#  [0.99336225]
+#  [0.9949134 ]
+#  [0.00810985]]
+# 모델의 loss :  0.006582422647625208
+# acc :  1.0
