@@ -13,8 +13,8 @@ y_data = [0, 1, 1, 0]
 # 2. 모델구성
 model = Sequential()    # Sequential() --> compile, 훈련 다 해야됨
 model.add(Dense(32, input_dim=2))
-model.add(Dense(64, activation='relu'))
-model.add(Dense(32, activation='relu'))
+model.add(Dense(64, activation='relu'))   # 히든레이어 쌓아주기 
+model.add(Dense(32, activation='relu'))   # 히든레이어 쌓아주기 
 model.add(Dense(1, activation='sigmoid'))  # MLP(multi layer perceptron) 와 동일
 
 # 3. 컴파일, 훈련
