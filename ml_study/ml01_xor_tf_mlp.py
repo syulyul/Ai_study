@@ -11,7 +11,7 @@ y_data = [0, 1, 1, 0]
 
 # [실습] MLP 모델 구성하여 acc = 1.0 만들기
 # 2. 모델구성
-model = Sequential()    # compile, 훈련 다 해야됨
+model = Sequential()    # Sequential() --> compile, 훈련 다 해야됨
 model.add(Dense(32, input_dim=2))
 model.add(Dense(64, activation='relu'))
 model.add(Dense(32, activation='relu'))
