@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn.linear_model import Perceptron
-from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), Regresser(회귀)
+from sklearn.svm import LinearSVC, LinearSVR    # C = cassifier(분류), R = Regresser(회귀)
 from sklearn.metrics import accuracy_score
 from keras.models import Sequential
 from keras.layers import Dense
@@ -10,7 +10,7 @@ x_data = [[0, 0], [0, 1], [1, 0], [1, 1]]
 y_data = [0, 1, 1, 0]
 
 # 2. 모델구성
-model = Sequential()    # compile, 훈련 다 해야됨
+model = Sequential()    # Sequential() --> compile, 훈련 다 해야됨
 model.add(Dense(1, input_dim=2, 
                 activation='sigmoid'))  # sklearn 의 perceptron()과 동일
 
